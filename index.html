@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperatorio-Parcial 1-Stefano Colla Vergara</title>
+    
+</head>
+<body>
+    <h1>Rotiseria El Gringo</h1>
+    <hr>
+    <section id="seccion_plato">
+        <form id="formulario plato">
+            <h2>Configura Tu Plato</h2>
+            <br>
+            <div>
+                <label for="fecha">Fecha de Pedido</label>
+                <input id="fecha" type="date" disabled>
+            </div>
+            <br>
+            <div>
+                <label for="plato">Seleccione el Plato</label>
+                <select id="plato" name="platos">
+                    <option value="select" selected>select</option>
+                    <option value="Hamburguesa Docle Carne">Hamburguesa Doble Carne</option>
+                    <option value="Hamburguesa Grande">Hamburguesa Grande</option>
+                    <option value="Hamburguesa Chica">Hamburguesa Chica</option>
+                </select>
+                <input id="agregar_plato" type="button" value="Agregar">
+            </div>
+            <br>
+            <div>
+                <label for="extra">Agregar Ingredientes Adicionales</label>
+                <select id="extra" name="extras" disabled>
+                    <option value="select" selected>select</option>
+                    <option value="papas">Papas</option>
+                    <option value="cebollas">Cebollas</option>
+                    <option value="aderezos">Aderezos</option>
+                </select>
+                <input id="agregar_extra" type="button" value="Agregar" disabled>
+            </div>
+            <br>
+            <div>
+                <h2>Tabla de Items a Solicitar</h2> <br>
+                <table>
+                    <th>Items Incluidos</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </table>
+            </div>
+            <input type="submit" value="Agregar al Carrito">
+        </form>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
